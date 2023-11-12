@@ -9,28 +9,29 @@
 </head>
 <body>
     <header>
-        <section class="logo">
-            <img src="/images/logo-mercado-liebre.svg" alt="logo de header">
-        </section>
-        <section class="navbar">        
-            <nav>Buscar productos marcas </nav>
-        </section>
-        <section class="buscador__header_home">
-            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+        <div class="caja__logo">
+            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo de header">
+        </div>
+        
+        <section class="busqueda">
+            <div class="navbar">        
+                <nav>Buscar productos, marcas y más </nav>
+            </div>
+            <div class="buscador__header_home">
+                <i class="fa-solid fa-magnifying-glass" style="color: #666;"></i>
+            </div>
         </section>
     
-    <h2><i class="fa-solid fa-hand-holding-dollar" style="color: #000000;"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+    <h2 class="cuotas__header"><i class="fa-solid fa-hand-holding-dollar" style="color: #000000;"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
     <nav class="site">
-        <ul>
+        <ul class="nav_izquierda">
             <li><a href="/ofertas">Ofertas</a></li>
             <li><a href="/tiendasOficiales">Tiendas Oficiales</a></li>
             <li><a href="/vender">Vender</a></li>
             <li><a href="/ayudar">Ayudar</a></li>
         </ul>
-    </nav>
-    <nav class="login__navbar">
-        <ul>
-            <li><a href="/crearCuenta">Creá tu cuenta <i class="fa-regular fa-id-card" style="color: #000000;"></i></a></li>
+        <ul class="nav_derecha">
+            <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-id-card" style="color: #000000;"></i></a></li>
             <li><a href="/ingresar">Ingresá <i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i></a></li>
             <li><a href="/misCompras">Mis compras <i class="fa-solid fa-basket-shopping" style="color: #000000;"></i></a></li>
         </ul>
@@ -39,10 +40,11 @@
         <i class="fas fa-bars"></i>
     </div>
     </header>
+
     <main>
         <img id="banner" src="images/img-home-banner.jpg" alt="banner" width="100%">
+        <h1 id="titulares">Basado en tu última visita</h1>
         <section class="section__home__body">
-            <h1 id="titulares">Basado en tu última visita</h1>
             <article class="article__home__body">
                 <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera" width="90%">
             <div class="cajas__precios__section">
@@ -88,8 +90,8 @@
             </div>
             </article>
         </section>
+        <h1 id="titulares">Ofertas</h1>
         <section class="section__home__body">
-            <h1 id="titulares">Ofertas</h1>
             <article class="article__home__body">
                 <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera" width="90%">
             <div class="cajas__precios__section">
@@ -105,7 +107,7 @@
                 <img src="/images/img-macbook-pro-2019.jpg" alt="macbook Pro 2019" width="90%">
             <div class="cajas__precios__section">
                 <div class="container__truck">
-                    <i class="fa-solid fa-truck" style="color: #39b54a;"></i>
+                    <i class="fa-solid fa-truck camion" style="color: #39b54a;"></i>
                 </div>
                 <h4 id="precios">$230.000</h4>
                 <h4 id="descuentos">20% OFF</h4>
@@ -127,7 +129,7 @@
                 <img src="/images/img-tv-samsung-smart.jpg" alt="smart tv" width="90%">
             <div class="cajas__precios__section">
                 <div class="container__truck">
-                <i class="fa-solid fa-truck" style="color: #39b54a;"></i>
+                    <i class="fa-solid fa-truck" style="color: #39b54a;"></i>
                 </div>
                 <h4 id="precios">$23.200</h4>
                 <h4 id="descuentos">5% OFF</h4>

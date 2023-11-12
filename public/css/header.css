@@ -1,37 +1,56 @@
 header{
     background-color: #EAC926;
     text-align: center;
-    padding-bottom: 20px;}
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .logo{
-    width: 250px;
+    width: 120px;
+    margin-top: 5px;
+    height: 60px;
+    margin-right: 5px;
 }
+
+.busqueda{
+    display: flex
+}
+
 .navbar{
     background-color: white;
     color: #666;
     text-align: center;
-    padding: 8px 12px;
-    border: 1px solid #666;
+    padding:1px;
+    border: 1px solid white;
     width: 160px;
+    height: 20px;
     margin-top: 20px;
-    display: inline-block;
+    display: flex;
+    border-radius: 3%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
-@media(min-width: 361px){
-.burger-menu {display: none;}
-}
-.burger-menu i{
-    border: 1px solid #666;
-    padding: 8px 8px;
-    background-color: #03264C;;
-    display: inline-block;
-    color:white;}
 
 .buscador__header_home{
-    border: 1px solid #666;
-    padding: 8px 8px;
+    border: 1px solid white;
+    padding: 4px;
     background-color: white;
-    display: inline-block;
+    display: flex;
+    width: 10px;
+    height: 14px;
+    margin-top: 20px;
+    border-radius: 10%;
+    margin-left: -4px;
 }
+
+.cuotas__header{
+    width: 250px;
+    margin: 2% 18%;
+}
+
 nav ul{
     list-style-type: none;
     margin-left: 0px;
@@ -47,6 +66,83 @@ nav a{
 .login__navbar{
     display: none;
 }
-@media(min-width:361px){
-.site{display: block;}
-.login__navbar{display: block;}}
+.burger-menu i{
+        border: 1px solid #03264C ;
+        padding: 8px 8px;
+        background-color: #03264C;;
+        display: flex;
+        color:white;
+        border-radius: 5%;
+        justify-content: center;
+}
+@media (min-width: 768px){
+header{
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 200px;
+    height: 100px;
+}
+
+.busqueda{
+    margin-top:3% ;
+    margin-right: 3%;
+}
+.navbar {
+    border-radius: 6%;
+}
+.buscador__header_home{
+    border-radius: 20%;
+}
+.cuotas__header{
+    margin: 2% 35%;
+}
+.site{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.site ul{
+    display: flex;
+}
+.site li{
+    margin: 0 5px;
+}
+.burger-menu{
+    display: none;
+}
+}
+@media (min-width: 1200px){
+    .caja__logo, .busqueda, .cuotas__header, .site{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .busqueda{
+        margin-top: 1%;
+    }
+
+    .navbar{
+        width: 200px;
+        height: 30px;
+    }
+    .buscador__header_home{
+        height: 24px;
+        width: 20px;
+        padding:auto;
+    }
+
+    .cuotas__header{
+        width: auto;
+        margin:2% 5% ;
+    }
+
+    .site li{
+        margin: 0 15px;
+    }
+
+    .site a{
+        font-size: 20px;
+    }
+}
