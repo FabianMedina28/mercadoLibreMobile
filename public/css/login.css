@@ -1,0 +1,26 @@
+.formulario__login{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1%;
+}
+.formulario__login form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.formulario__login input{
+    margin: 20px 0px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+    
+}
+.envio__login{
+    background-color: #03264C;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}

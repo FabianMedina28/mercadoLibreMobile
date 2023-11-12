@@ -1,0 +1,36 @@
+.formulario__register{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.formulario__register form{
+    display: flex;
+    flex-direction: column;
+}
+.formulario__register input{
+    margin: 15px 0px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.enviar__register{
+    background-color: #03264C;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+.borrar__register{    
+    background-color: #03264C;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    margin-top: 5px;
+}
